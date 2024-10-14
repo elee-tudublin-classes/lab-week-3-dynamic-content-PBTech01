@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "./partials/head.html" %}
+    <title>Advice</title>
+</head>
+
+<body>
+    {% include "./partials/nav.html" %}
+    
+    <h1>Advice</h1>
+    <div class="alert alert-info" role="alert">
+        <p>{{ data.slip.advice }}</p>
+    </div>
+
+    {% include "./partials/dependencies.html" %}
+    
+   
+</body>
+
+</html>
+
