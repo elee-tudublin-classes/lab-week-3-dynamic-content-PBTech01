@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "./partials/head.html" ignore missing with context %}
+    <title>NASA APOD</title>
+</head>
+<body>
+    {% include "./partials/nav.html" ignore missing with context %}
+    <h1>Astronomical Picture of the Day</h1>
+    <img src="{{ data.url }}" alt="NASA APOD" class="img-fluid">
+    <p>{{ data.explanation }}</p>
+    {% include "./partials/dependencies.html" ignore missing with context %}
+</body>
+</html>
+

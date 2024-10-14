@@ -1,2 +1,2 @@
+console.log("JavaScript loaded");
 
-console.log('Hello World!');

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "./partials/head.html" ignore missing with context %}
+    <title>Home Page</title>
+</head>
+
+<body>
+    <!-- Include navbar from partials -->
+    {% include "./partials/nav.html" ignore missing with context %}
+
+    <div class="container mt-5">
+        <h1>Dynamic Content</h1>
+
+        <div class="timeBlock">
+            <h3>Server Time:</h3>
+            <h4 id="serverTime">{{ serverTime }}</h4>
+        </div>
+
+        <div class="timeBlock">
+            <h3>Browser Time:</h3>
+            <h4 id="browserTime"></h4>
+        </div>
+    </div>
+
+    {% include "./partials/dependencies.html" ignore missing with context %}
+
+    <!-- Load browserTime.js script to update browser time -->
+    <script src="/static/js/browserTime.js"></script>
+</body>
+
+</html>
+
+
+
+
